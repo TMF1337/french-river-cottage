@@ -270,6 +270,10 @@
       gap: 4rem; margin-top: 3rem;
     }
     .bedroom-card {}
+    /* odd card out (3 bedrooms) centers instead of hugging the left column */
+    .bedroom-showcase > .bedroom-card:last-child:nth-child(odd) {
+      grid-column: 1 / -1; max-width: calc(50% - 2rem); margin-inline: auto;
+    }
     .bedroom-card .bedroom-img {
       overflow: hidden; border-radius: 4px;
       aspect-ratio: 16/10; margin-bottom: 1.5rem;
@@ -438,6 +442,7 @@
       .property-grid { grid-template-columns: 1fr; }
       .property-grid .img-wrapper.tall { grid-row: auto; aspect-ratio: 4/3; }
       .bedroom-showcase { grid-template-columns: 1fr; gap: 3rem; }
+      .bedroom-showcase > .bedroom-card:last-child:nth-child(odd) { max-width: none; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
       .gallery-grid .g-img.wide { grid-column: span 2; }
       .location-content { grid-template-columns: 1fr; }
@@ -508,11 +513,11 @@
     </div>
     <div class="intro-features intro-secondary">
       <div class="feat">
-        <span class="feat-value">4</span>
+        <span class="feat-value">3</span>
         <span class="feat-label">Bedrooms</span>
       </div>
       <div class="feat">
-        <span class="feat-value">6</span>
+        <span class="feat-value">5</span>
         <span class="feat-label">Beds</span>
       </div>
       <div class="feat">
@@ -623,22 +628,12 @@
         </div>
         <div class="bedroom-card reveal">
           <div class="bedroom-img">
-            <img src="images/bedroom-3.png" class="photo-interior zoomable" alt="Bedroom 3">
+            <img src="images/bedroom-3.jpg" class="photo-interior zoomable" alt="Bedroom 3">
           </div>
           <h3>Bedroom Three</h3>
           <div class="room-detail">
-            <strong>1 Double Bed</strong><br>
-            A cozy pine-wainscoted room with natural light and hardwood floors. Simple, comfortable, and quiet.
-          </div>
-        </div>
-        <div class="bedroom-card reveal">
-          <div class="bedroom-img">
-            <img src="images/bedroom-4.png" class="photo-interior zoomable photo-crop-left" alt="Bedroom 4">
-          </div>
-          <h3>Bedroom Four</h3>
-          <div class="room-detail">
-            <strong>1 Double Bed</strong><br>
-            Pine-walled lower level room with a warm, tucked-in feel. Cozy lighting and everything you need for a solid night's sleep.
+            <strong>2 Double Beds</strong><br>
+            Bright lower-level room with pine wainscoting, a ceiling fan, and space for a group. Two beds make it the most flexible room in the cottage.
           </div>
         </div>
       </div>
