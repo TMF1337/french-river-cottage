@@ -229,6 +229,11 @@
       object-position: 70% center;
     }
 
+    /* Tall photo in the wide 16:7 slot: bias the crop low to keep the hot tub in frame */
+    .photo-crop-low {
+      object-position: center 78%;
+    }
+
     /* ── PHOTO AIRBRUSH FILTERS ── */
     /* Outdoor/water shots: slightly warmer, more vibrant */
     .photo-outdoor {
@@ -641,7 +646,7 @@
       </div>
       <div class="gallery-grid reveal">
         <div class="g-img wide">
-          <img src="images/stars.jpg" class="photo-night zoomable" alt="Starry night over the river">
+          <img src="images/hot-tub.jpg" class="photo-sunset zoomable photo-crop-low" alt="Sunset over the bay from the hot tub">
         </div>
         <div class="g-img">
           <img src="images/backview.jpg" class="photo-outdoor zoomable" alt="Dock and boat on 18 Mile Bay">
@@ -651,6 +656,9 @@
         </div>
         <div class="g-img">
           <img src="images/kayaks.jpg" class="photo-outdoor zoomable" alt="Kayaks on the waterfront">
+        </div>
+        <div class="g-img">
+          <img src="images/stars.jpg" class="photo-night zoomable" alt="Starry night over the river">
         </div>
       </div>
     </div>
